@@ -1,0 +1,1026 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-primarry: #007a3d;
+  --bg-secondary: #f7f7f7;
+  --txt-primarry: #0e0d0d;
+  --txt-secondary: ;
+}
+
+/* header */
+header {
+  position: fixed;
+  height: 14%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  color: var(--txt-primarry);
+  position: fixed;
+  z-index: 5;
+}
+
+.logo-img {
+  cursor: pointer;
+  width: 4.5vw;
+  height: 4.5vw;
+}
+
+.logo-tittle {
+  color: var(--txt-primarry);
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: auto;
+  font-size: 1.7vw;
+  padding: 7px;
+  font-weight: 500;
+}
+
+.logo-tittle:visited {
+  color: inherit;
+}
+
+.logo-tittle h1:hover {
+  color: var(--bg-primarry);
+}
+
+.logo-tittle h1::after {
+  content: '';
+  display: block;
+  border-bottom: 0.1rem solid var(--bg-primarry);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.logo-tittle h1:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* header*/
+
+section {
+  scroll-margin-top: 80px;
+  /* sesuaikan dengan tinggi navbar */
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid #513c28;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-nav a {
+  margin-left: 20px;
+  list-style-type: none;
+  padding: 5px;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: var(--txt-primarry);
+}
+
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  margin-bottom: -10px;
+  margin: 0 1 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--bg-primarry);
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--bg-primarry);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: var(--txt-primarry);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* navbar */
+
+/* hero-section */
+.hero {
+  width: 100%;
+}
+
+.hero-main {
+  height: auto;
+  background-color: var(--bg-primarry);
+}
+
+.hero-img {
+  opacity: 60%;
+  width: 100%;
+  height: 80vh;
+  display: block;
+}
+
+.hero-tittle {
+  position: absolute;
+  color: white;
+  padding: 5px 10px;
+}
+
+.title {
+  bottom: 20%;
+  font-size: 7vw;
+  font-weight: bold;
+}
+
+/* hero-section */
+
+/* Tentang kami */
+.about {
+  padding: 7rem 5% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.products h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6vw;
+  margin-bottom: 3rem;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 2.8vw;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.5vw;
+  font-weight: 100;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Tentang kami */
+
+/* Menu Section */
+.menu {
+  margin-top: 2rem;
+  padding: 40px 60px;
+}
+
+.layanan-box {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.layanan-img {
+  width: 30%;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 4px;
+}
+
+.layanan-text {
+  max-width: 100%;
+}
+
+.layanan-text h2 {
+  color: #0c2151;
+  font-size: 2.5vw;
+  margin-bottom: 10px;
+}
+
+.layanan-text p {
+  font-size: 1.4vw;
+  line-height: 1.6;
+}
+
+.toggle-btn {
+  display: inline-block;
+  margin-top: 8px;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.extra-text {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  margin-top: 8px;
+}
+
+.extra-text.show {
+  max-height: 300px;
+}
+
+/* Layanan */
+
+/* layanan 2  */
+.program h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 5rem;
+}
+
+.program {
+  padding: 40px 60px;
+  margin-top: 8%;
+}
+
+.program-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.carousel img {
+  max-height: 35vh;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+
+.program-text {
+  max-width: 100%;
+}
+
+.program-text h2 {
+  color: #0c2151;
+  font-size: 2.5vw;
+  margin-bottom: 10px;
+}
+
+.program-text p {
+  font-size: 1.4vw;
+  line-height: 1.6;
+}
+
+.toggle-btn {
+  display: inline-block;
+  font-size: 1.3vw;
+  margin-top: 8px;
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  color: #007a3d;
+}
+
+.extra-text {
+  overflow: hidden;
+  text-align: justify;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  margin-top: 8px;
+}
+
+.extra-text.show {
+  max-height: 300px;
+}
+
+.layanan-text {
+  text-align: justify;
+}
+
+/* layanan 2*/
+
+
+/* Jadwal Dokter */
+.jadwal h2 {
+  text-align: center;
+  font-size: 2.6vw;
+}
+
+.jadwal {
+  padding: 40px 60px;
+}
+
+.contant {
+  margin-bottom: 50px;
+}
+
+.tittle-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5vw;
+  color: var(--bg-primarry);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+.kard {
+  background: rgb(255, 248, 248);
+  margin-top: 20px;
+}
+
+.tittle {
+  margin-bottom: 30px;
+}
+
+.tard {
+  display: flex;
+  justify-content: center;
+}
+
+.img-kard {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-kard:fourth-of-type {
+  object-position: top;
+}
+
+.tittle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7vw;
+  font-weight: bold;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+table {
+  margin-left: 20px;
+}
+
+.thh {
+  font-size: 1.5vw;
+  background-color: var(--bg-primarry);
+  color: var(--bg-secondary);
+}
+
+.border-0 {
+  font-size: 1.5vw;
+}
+
+table,
+tr,
+td {
+  text-align: center;
+  width: 100%;
+  max-width: 80vw;
+  table-layout: fixed;
+  border-collapse: collapse;
+  height: 2.5vw;
+}
+
+/* jadwal dokter */
+
+/* Footer */
+footer {
+  font-size: 1.5vw;
+  background-color: var(--bg-primarry);
+  text-align: center;
+}
+
+.map {
+  width: 18%;
+  height: 10%;
+  display: flex;
+  margin-left: auto;
+  margin-top: -170px;
+  margin-right: 110px;
+}
+
+.footer {
+  color: var(--bg-secondary);
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo,
+.footer-menu,
+.footer-alamat,
+.footer-email {
+  flex: 1 1 30px;
+}
+
+.footer-logo img {
+  display: flex;
+  margin-left: 136px;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.footer-menu p,
+.footer-alamat p,
+.footer-email p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social h1 {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.footer-down-icon {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.down-circle {
+  background-color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.down-circle span {
+  font-size: 24px;
+  color: white;
+}
+
+
+/* wa */
+.band {
+  position: fixed;
+  font-size: 3vw;
+  padding: 14px;
+  right: 40px;
+  bottom: 60px;
+  background-color: #59ce72;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  transition: 0.5s;
+  color: white;
+}
+
+/* wa */
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .logo-img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .logo-tittle {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 7px;
+  }
+
+  .title {
+    bottom: 20%;
+    font-size: 10vw;
+  }
+
+  .hero-img {
+    width: 100%;
+    min-height: 80vh;
+  }
+
+  .about h2,
+  .menu h2,
+  .products h2,
+  .contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    background-color: #f7f7f7;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+
+  .modal-content {
+    flex-wrap: wrap;
+  }
+
+  /* menu */
+  .jadwal h2 {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+
+  .tittle-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--bg-primarry);
+    margin-bottom: 20px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+
+  }
+
+  .kard {
+    width: 100%;
+    background-color: white;
+  }
+
+  .img-kard {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 19px;
+  }
+
+  .tittle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+
+  .main-tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tard {
+    display: block;
+    text-align: center;
+  }
+
+  table {
+    margin-top: 0px;
+  }
+
+  .waper {
+    overflow-x: auto;
+  }
+
+  /* menu */
+
+  /* footer */
+  footer {
+    font-size: 15px;
+    background-color: var(--bg-primarry);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+  }
+
+  .map {
+    width: 150px;
+    height: 130px;
+    display: flex;
+    margin-left: auto;
+    margin-top: -120px;
+    margin-right: 38px;
+  }
+
+
+
+  .footer {
+    background-color: var(--bg-primarry);
+    color: white;
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .footer-logo,
+  .footer-menu,
+  .footer-alamat,
+  .footer-email {
+    flex: 1 1 220px;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    display: flex;
+    margin-left: 50px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo p {
+    margin-right: 33px;
+  }
+
+  .footer-menu h4,
+  .footer-alamat h4,
+  .footer-email h4,
+  .footer-social h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-menu p,
+  .footer-alamat p,
+  .footer-email p {
+    margin: 5px 0;
+  }
+
+  .footer-social {
+    text-align: center;
+    margin-top: -30px;
+  }
+
+  .footer-social h4 {
+    margin-bottom: 20px;
+  }
+
+  .footer-social h1 {
+    margin: 0 20px;
+  }
+
+  .footer-down-icon {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* footer */
+
+  /* menu */
+  .layanan {
+    padding: 15px;
+  }
+
+  .layanan-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .layanan-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .layanan-text {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .layanan-text h2 {
+    font-size: 20px;
+  }
+
+  .layanan-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .toggle-btn {
+    font-size: 14px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+
+  .extra-text {
+    text-align: left;
+    font-size: 13.5px;
+  }
+
+  /* menu */
+
+
+  .program {
+    margin-top: 20%;
+    padding: 20px;
+  }
+
+  .program-box {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .carousel img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .program-text {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .program-text h2 {
+    font-size: 20px;
+  }
+
+  .program-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* wa */
+  .band {
+    position: fixed;
+    font-size: 8vw;
+    padding: 14px;
+    right: 40px;
+    bottom: 60px;
+    background-color: #59ce72;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+    color: white;
+  }
+
+  /* wa */
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .title {
+    font-size: 14vw;
+  }
+
+  /* jadwal dokter */
+  .content {
+    margin-top: 20px;
+  }
+
+
+  .tittle-container {
+    font-size: 22px;
+    color: var(--bg-primarry);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .img-kard {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 19px;
+  }
+
+  .waper table {
+    min-width: 500px;
+    border-collapse: collapse;
+  }
+
+  table,
+  tr,
+  td {
+    text-align: center;
+    width: 100%;
+    max-width: 80vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    height: 25px;
+  }
+
+
+
+  .thh {
+    font-size: 3.1vw;
+    background-color: var(--bg-primarry);
+    color: var(--bg-secondary);
+    text-align: center;
+  }
+
+  .border-0 {
+    font-size: 3.1vw;
+  }
+
+  /* jadwal dokter */
+
+  /* footer */
+  footer {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .footer-logo img {
+    margin-left: 11px;
+    width: 100px;
+  }
+
+  .footer-social {
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .footer-social h1 {
+    margin: 0 5px;
+  }
+
+  /* footer */
+}
