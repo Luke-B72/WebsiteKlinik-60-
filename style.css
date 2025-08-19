@@ -14,7 +14,6 @@ html {
   --bg-primarry: #007a3d;
   --bg-secondary: #f7f7f7;
   --txt-primarry: #0e0d0d;
-  --txt-secondary: ;
 }
 
 /* header */
@@ -70,7 +69,6 @@ header {
 
 section {
   scroll-margin-top: 80px;
-  /* sesuaikan dengan tinggi navbar */
 }
 
 /* navbar */
@@ -172,9 +170,7 @@ section {
 }
 
 .about h2,
-.menu h2,
-.products h2,
-.contact h2 {
+.menu h2 {
   text-align: center;
   font-size: 2.6vw;
   margin-bottom: 3rem;
@@ -362,18 +358,6 @@ section {
   color: #007a3d;
 }
 
-.extra-text {
-  overflow: hidden;
-  text-align: justify;
-  max-height: 0;
-  transition: max-height 0.5s ease;
-  margin-top: 8px;
-}
-
-.extra-text.show {
-  max-height: 300px;
-}
-
 .layanan-text {
   text-align: justify;
 }
@@ -389,10 +373,6 @@ section {
 
 .jadwal {
   padding: 40px 60px;
-}
-
-.contant {
-  margin-bottom: 50px;
 }
 
 .tittle-container {
@@ -600,9 +580,7 @@ footer {
   }
 
   .about h2,
-  .menu h2,
-  .products h2,
-  .contact h2 {
+  .menu h2 {
     text-align: center;
     font-size: 2.6rem;
   }
@@ -644,11 +622,6 @@ footer {
     transform: scaleX(0.2);
   }
 
-  .navbar .search-form {
-    width: 90%;
-    right: 2rem;
-  }
-
   .about .row {
     flex-wrap: wrap;
   }
@@ -674,18 +647,6 @@ footer {
 
   .menu p {
     font-size: 1.2rem;
-  }
-
-  .contact .row {
-    flex-wrap: wrap;
-  }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-
-  .contact .row form {
-    padding-top: 0;
   }
 
   .modal-content {
