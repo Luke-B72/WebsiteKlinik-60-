@@ -55,7 +55,7 @@ function moveSlide(carouselId, step) {
 
 // media sosial
 function redirWhatsapp2() {
-  window.location.href = "https://wa.me/+628562009347"
+  window.location.href = "https://wa.me/+6282125167585"
 }
 
 function redirFacebook1() {
@@ -66,5 +66,6 @@ function redirInstagram1() {
   window.location.href = "https://www.instagram.com/kliniklamaraninfo/"
 }
 // media sosial
+
 
 
